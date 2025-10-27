@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jóvenes Informados MX - [Deudas Estudiantiles]</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-heart-fill text-primary"></i>
+                InfoMundo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="temasDropdown" role="button" data-bs-toggle="dropdown">
+                            Temas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#titulo-tema">Deudas Estudiantiles</a></li>
+                            <li><a class="dropdown-item" href="#titulo-tema">Estudiantes</a></li>
+                            <li><a class="dropdown-item" href="#titulo-tema">Préstamos</a></li>
+                            <li><a class="dropdown-item" href="#titulo-tema">Bancos</a></li>
+                            <li><a class="dropdown-item" href="#titulo-tema">Educación</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recursos">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recursos">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                            <li class="breadcrumb-item"><a href="#" id="categoria-breadcrumb">Categoría</a></li>
+                            <li class="breadcrumb-item active" aria-current="page" id="tema-breadcrumb">Tema</li>
+                        </ol>
+                    </nav>
+                    <h1 id="titulo-tema">Deudas Estudiantiles</h1>
+                    <p class="lead" id="descripcion-tema">En esta página conocerás qué son las deudas estudiantiles, cómo funcionan los créditos educativos y qué estrategias puedes aplicar para manejarlas de forma responsable, evitando riesgos financieros y cuidando tu futuro económico.</p>
+                    
+                    <img src="IMG/Foto 1.jpg" 
+     alt="Estudiantes analizando finanzas" 
+     class="img-fluid w-100 rounded mt-3">
+
+
+                    <button class="btn btn-light btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#infoModal">
+                        <i class="bi bi-info-circle"></i> Información Importante
+                    </button>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="hero-icon">
+                        <!--<i class="bi bi-heart-pulse"></i>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Columna de Contenido Principal -->
+            <div class="col-lg-8">
+                <!-- Introducción -->
+                <section class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Introducción</h2>
+                        <p id="introduccion-contenido">Las deudas estudiantiles son importantes porque marcan las primeras decisiones financieras de muchos jóvenes. Entender cómo funcionan y cómo pagarlas responsablemente ayuda a evitar problemas económicos y a construir un futuro financiero estable.</p>
+                        
+                        <!-- Componente Bootstrap: Tooltip -->
+                        <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Este es un ejemplo de tooltip con información adicional">
+                            <i class="bi bi-question-circle"></i> Información adicional
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Sección de Información -->
+                <section class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Información Clave</h2>
+                        
+                        <!-- Componente Bootstrap: Acordeón -->
+                        <div class="accordion" id="infoAccordion">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        Tipos de Financiamiento
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#infoAccordion">
+                                    <div class="accordion-body">
+                                        <p>Existen diferentes opciones para pagar tus estudios: becas, créditos educativos, apoyos gubernamentales y financiamientos privados. Antes de elegir, compara tasas de interés, plazos y requisitos para evitar compromisos difíciles de cumplir.</p>
+                                        
+                                        <!-- Componente Bootstrap: Popover -->
+                                        <button type="button" class="btn btn-info btn-sm" data-bs-toggle="popover" data-bs-title="Dato importante" data-bs-content="Este es un dato relevante que merece atención especial.">
+                                            <i class="bi bi-lightbulb"></i> Dato importante: No todos los créditos educativos cobran los mismos intereses.
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        Costos e Intereses
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                                    <div class="accordion-body">
+                                        No solo pagas el dinero que te prestan, también los intereses y comisiones. Conocer el Costo Anual Total (CAT) te permite saber cuánto realmente pagarás y tomar decisiones financieras más seguras.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        Planificación del Pago
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                                    <div class="accordion-body">
+                                        Es importante crear un presupuesto y destinar una parte de tus ingresos al pago del crédito. Evitar retrasos mantiene tu historial crediticio positivo y te ayuda a acceder a mejores oportunidades en el futuro.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Estadísticas o Datos -->
+                <section class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Datos Relevantes</h2>
+                        
+                        <!-- Componente Bootstrap: Cards -->
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card text-center h-100">
+                                    <div class="card-body">
+                                        <h3 class="display-6 text-primary">70%</h3>
+                                        <p class="card-text">de los estudiantes que financian sus estudios en México provienen de hogares cuyos padres no asistieron a la universidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card text-center h-100">
+                                    <div class="card-body">
+                                        <h3 class="display-6 text-success">2%</h3>
+                                        <p class="card-text">de los 1.8 millones de estudiantes en más de 2 500 universidades privadas en México tienen un crédito estudiantil formal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card text-center h-100">
+                                    <div class="card-body">
+                                        <h3 class="display-6 text-warning">39%</h3>
+                                        <p class="card-text">es el promedio de la deuda estudiantil como proporción del ingreso anual de los prestatarios de 15-23 años en Estados Unidos (dato que da contexto a nivel internacional).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recursos y Ayuda -->
+                <section class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Recursos de Ayuda</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                Línea de ayuda: <strong>55-4-81-45-10</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-globe text-primary me-2"></i>
+                                Sitio web: <a href="#">www.EduDeudas.org</a>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                Centros de apoyo en tu localidad
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Barra Lateral -->
+            <div class="col-lg-4">
+                <!-- Tarjeta de Información Rápida -->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="bi bi-lightning-charge"></i> Datos Rápidos</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> 60 % de los estudiantes no compara opciones antes de solicitar un crédito educativo.</li>
+                            <li class="mb-2"><i class="bi bi-shield-check text-info me-2"></i> 1 de cada 4 jóvenes desconoce la tasa de interés de su préstamo.</li>
+                            <li class="mb-2"><i class="bi bi-chat-heart text-danger me-2"></i> 45 % de quienes tienen deuda educativa retrasan otros proyectos financieros, como ahorrar o invertir.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Enlaces a Otros Temas -->
+                <div class="card mb-4">
+                    <div class="card-header bg-secondary text-white">
+                        <h5 class="mb-0"><i class="bi bi-link-45deg"></i> Temas Relacionados</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action">Educación Financiera</a>
+                            <a href="#" class="list-group-item list-group-item-action">Créditos y Ahorro</a>
+                            <a href="#" class="list-group-item list-group-item-action">Planeación Económica Personal</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Llamada a la Acción -->
+                <section id="recursos"></section>
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h5>¿Necesitas ayuda?</h5>
+                        <p>No dudes en buscar apoyo profesional</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            Contactar Especialista
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Deudas Estudiantiles</h5>
+                    <p>Estudia con propósito, decide con conocimiento.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Inicio</a></li>
+                        <li><a href="recursos.html" class="text-white-50">Recursos</a></li>
+                        <li><a href="contacto.html" class="text-white-50">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Privacidad</a></li>
+                        <li><a href="#" class="text-white-50">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2025 Deudas Estudiantiles. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Información Importante -->
+    <div class="modal fade" id="infoModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Información Importante</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este sitio proporciona información con fines educativos. Si necesitas ayuda profesional, contacta a un especialista.</p>
+                    <p>La información presentada está basada en fuentes confiables y actualizadas.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Contacto -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contactar Especialista</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Área para Toast (aparecerá en la esquina inferior derecha) -->
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <!-- Los toasts se agregarán aquí dinámicamente -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="project.js"></script>
+</body>
+</html>
